@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scrypt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scrypt/scrypt_{{ version }}.tar.gz
-  sha256: 52b75fdf41609b898db2d738a89dc475722d897a01caadf5a37b51772a69098b
+  sha256: 014a233e33a505d677d72ab29c6193e74a660751073c43685f8f1615c0becc86
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
